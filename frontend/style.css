@@ -1,0 +1,581 @@
+button.widget-show-btn {
+  color: white;
+  background-color: #2997c3;
+  margin-left: 26%;
+  margin-top: 12px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+}
+button.widget-show-btn:hover {
+  background-color: #278fb9;
+}
+.modal-body-relative {
+  position: relative;
+  width: 85%;
+  height: 90%;
+  top: 5%;
+  left: 10%;
+  right: 5%;
+  bottom: 5%;
+  margin: 0;
+  z-index: 1001;
+  overflow-y: scroll;
+  background-color: #f4f4f4;
+}
+.modal-body-relative::-webkit-scrollbar {
+  width: 5px;
+}
+
+.modal-body-relative::-webkit-scrollbar-thumb {
+  background-color: #2997c3;
+  border-radius: 5px;
+  height: 6px;
+}
+
+.modal-body-relative::-webkit-scrollbar-track {
+  background-color: #e1e1e1; /* Цвет фона полосы прокрутки */
+}
+
+body {
+  margin: 0;
+  color: #0e2c45;
+  padding: 20px 20px;
+}
+table.responsible_que_rules_table {
+  width: 100%;
+}
+div.pipeDeal_child_container,
+div.pipe_child_container,
+div.after_st_child_container,
+div.start_st_child_container {
+  padding: 0px;
+  margin: 0px;
+}
+.not_active {
+  display: none;
+}
+.active {
+  display: block;
+  transition: display 0.25s;
+  overflow: hidden;
+  opacity: 1;
+}
+div.styleSource2::-webkit-scrollbar,
+div.style-block2::-webkit-scrollbar {
+  width: 3px;
+}
+div.pipeDeal,
+div.pipe,
+div.after_status,
+div.start_status {
+  color: #1a3d59;
+  font-size: 14px;
+  padding: 8px 0px 8px 10px;
+  /*transition: background-color 0.1s, font-size 0.25s;*/
+}
+div.pipeDeal_child,
+div.pipe_child,
+div.after_st_child,
+div.start_st_child {
+  font-size: 13px;
+  padding: 0px;
+  margin-left: 7px;
+  padding: 5px 0px 5px 16px;
+}
+div.styleSource2::-webkit-scrollbar-thumb,
+div.style-block2::-webkit-scrollbar-thumb {
+  background-color: #2997c3;
+  border-radius: 3px;
+  height: 6px;
+}
+
+div.styleSource2::-webkit-scrollbar-track,
+div.style-block2::-webkit-scrollbar-track {
+  background-color: #e1e1e1;
+  border-radius: 3px;
+  height: 6px;
+}
+
+table.responsible_que_rules_table td {
+  text-align: center;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding: 7px 4px;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 12px;
+  margin-bottom: 25px;
+  text-align: center;
+  width: 100%;
+}
+
+tr.table-header {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+th {
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+tr.table-header th {
+  padding-top: 38px;
+  padding-bottom: 12px;
+}
+div#preloader2,
+div#preloader {
+  /*position: absolute;
+  opacity: 0.8;
+  height: 100vh;
+  width: 100%;*/
+
+  background: #fff;
+  width: -webkit-fill-available;
+  position: absolute;
+  z-index: 2000;
+  opacity: 0.6;
+  height: -webkit-fill-available;
+}
+
+div.pctr {
+  background: url("https://idajeprojects.ru/amo_resp/amo_rest_dev/loading.gif")
+    no-repeat center center;
+  margin: auto;
+  background-size: contain;
+  height: 100px;
+  width: 100%;
+  z-index: 2000;
+}
+div.tab {
+  width: 100%;
+  height: 100px;
+}
+div.maincontent {
+  border-radius: 4px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f0fbff;
+  margin-top: 22px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+h1.header {
+  font-weight: 500;
+  font-size: 17px;
+  color: white;
+  padding: 24px 15px;
+}
+tr:nth-child(even) {
+  background-color: #fafafa;
+}
+tr {
+  text-align: left;
+}
+div.action_pannel {
+  margin-top: 15px;
+}
+div.action_btn_green {
+  display: inline;
+}
+
+div.pipesRoles_container {
+  width: 58%;
+  margin-top: 50px;
+}
+div.sourcesContainer {
+  background-color: transparent;
+  border: 2px solid #2997c3;
+  padding: 12px 25px 10px 18px;
+  width: 53%;
+  border-radius: 4px;
+  margin: 55px 0px 8px 0px;
+}
+button.save-button {
+  background-color: #197dbc;
+  margin-top: 15px;
+  padding: 7px 11px;
+  border-radius: 8px;
+  color: white;
+  font-size: 13.5px;
+  cursor: pointer;
+  transition: background-color 0.25s, cursor 0.15s;
+}
+button.save-button:hover {
+  background-color: #1a83c4;
+}
+button.save-button:active {
+  opacity: 0.8;
+}
+div.header-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2997c3;
+}
+button.update-button2,
+button.update-button {
+  border: 2px solid #197dbc;
+  background-color: #f5f5f5;
+  margin-right: 20px;
+  color: #197dbc;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: border 0.25s, cursor 0.15s, color 0.15s;
+}
+button.update-button2:hover,
+button.update-button:hover {
+  border: 2px solid #1a83c4;
+  color: #1a83c4;
+  background-color: #f3f3f3;
+}
+button.update-button2:active,
+button.update-button:active {
+  opacity: 0.8;
+}
+input.limit_value {
+  padding: 3px 7px;
+  border: 1px solid lightblue;
+  border-radius: 3px;
+  background-color: white;
+}
+input.tr_active_value,
+input.active_value {
+  border: 1px solid lightblue;
+  border-radius: 1px;
+  background-color: white;
+}
+input.active_value {
+  border: 1px solid lightblue;
+}
+div.listT-container,
+div.list-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  margin-bottom: 25px;
+}
+div.listT-container {
+  margin-bottom: 17px;
+}
+button.append-btn {
+  color: #005aad;
+  border: 1.7px solid #2997c3;
+  padding: 4px 8px;
+  margin-left: 8px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 13px;
+  transition: box-shadow 0.15s;
+  background-color: #f5f5f5;
+  box-shadow: 4.5px 4.5px 10px rgba(0, 0, 0, 0.06);
+}
+div#userDeal_statuses,
+div#stageDeal_statuses,
+div#start_statuses,
+div#after_statuses,
+div#pipeline,
+div#user,
+div#sourceFirst,
+div#sourceSecond {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 2px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  border: 1.7px solid #2997c3;
+  border-radius: 5px;
+  font-size: 14px;
+  min-height: 25px;
+  box-shadow: 4.5px 4.5px 10px rgba(0, 0, 0, 0.06);
+}
+button.append-btn:hover {
+  border: 1.8px solid #2997c3;
+  color: #0092ca;
+  font-weight: 700;
+  transition: cursor 0.15s;
+}
+button.append-btn:active {
+  opacity: 0.6;
+}
+div.title {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 4.5px;
+}
+div.sideTitle1,
+div.sideTitle {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+div.sideTitle1 {
+  margin-top: 18px;
+}
+div.select-menu {
+  display: none;
+}
+div.warning {
+  font-size: 10px;
+  color: #666666;
+  font-weight: medium;
+}
+div.unbanned1,
+div.unbanned {
+  display: none;
+}
+div.underText {
+  margin-top: 8px;
+}
+div.styleSource2,
+div.style-block2,
+div.styleSource,
+div.style-block {
+  border: 1.5px solid #2997c3;
+  background-color: #f5f5f5;
+  width: 23%;
+  border-radius: 6px;
+  font-size: 12px;
+  position: fixed;
+  overflow-y: scroll;
+  max-height: 100%;
+  left: 64%;
+  top: 14%;
+  bottom: 16%;
+  padding: 0px 0px 8px 0px;
+  /*transform: translate(-70%, -50%);*/
+}
+div.styleSource2 {
+  width: 18%;
+  top: 40%;
+  bottom: 6%;
+  left: 71.5%;
+  /*transform: translate(-70%, -50%);*/
+}
+div.style-block2 {
+  max-height: 100%;
+  left: 71.5%;
+  top: 8%;
+  bottom: 16%;
+}
+/* Стили для полосы прокрутки WebKit (Chrome, Safari) */
+div.styleSource::-webkit-scrollbar,
+div.style-block::-webkit-scrollbar {
+  width: 3px;
+}
+
+div.styleSource::-webkit-scrollbar-thumb,
+div.style-block::-webkit-scrollbar-thumb {
+  background-color: #2997c3;
+  border-radius: 3px;
+  height: 6px;
+}
+
+div.styleSource::-webkit-scrollbar-track,
+div.style-block::-webkit-scrollbar-track {
+  background-color: #e1e1e1; /* Цвет фона полосы прокрутки */
+}
+
+div.styleSource {
+  width: 18%;
+  top: 40%;
+  bottom: 12%;
+  left: 60%;
+  /*transform: translate(-70%, -50%);*/
+}
+div.inner-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15.5px;
+  font-weight: 700;
+  color: white;
+  border-bottom: 1.5px solid #2997c3;
+  background-color: #0173ae;
+  padding: 18px 10px 10px 10px;
+  margin: 0px;
+}
+div.del:hover {
+  color: #e0e0e0;
+}
+div.delete_after_status,
+div.delete_start_status,
+div.delete_sourceOne,
+div.delete_sourceTwo,
+div.delete_pipe,
+div.delete_user,
+div.delete_userDeal,
+div.delete_pipeDeal {
+  background-color: #efefef;
+  display: flex;
+  margin-left: 6px;
+  color: red;
+  font-size: 12px;
+  font-weight: 700;
+  border: 1.8px solid lightblue;
+  padding: 1px 4px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-align: center;
+}
+div.deleter_after_status:hover,
+div.delete_start_status:hover,
+div.delete_sourceOne:hover,
+div.delete_sourceTwo:hover,
+div.delete_user:hover,
+div.delete_pipe:hover,
+div.delete_userDeal:hover,
+div.delete_pipeDeal:hover {
+  background-color: #e7e7e7;
+  color: rgb(230, 0, 0);
+  font-weight: 700;
+  transition: background-color 0.25s, cursor 0.15s, color 0.15s;
+}
+div.chosen_sourceOne,
+div.chosen_sourceTwo,
+div.chosen_pipe,
+div.chosen_pipeDeal,
+div.chosen_user,
+div.chosen_userDeal {
+  display: flex;
+  text-align: center;
+  background-color: #f1f1f1;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+div.chosenAfterStatus_container,
+div.chosenStartStatus_container,
+div.FirstchosenSource_container,
+div.SecondchosenSource_container,
+div.chosenPipeDeal_container,
+div.chosenPipe_container,
+div.chosenUserDeal_container,
+div.chosenUser_container {
+  display: flex;
+  align-items: center;
+  margin: 5px 10px 5px 5px;
+  border: 1.5px solid lightblue;
+  padding: 2px 2px 2px 4px;
+  border-radius: 4px;
+}
+div.userDeal_name:hover,
+div.start_status:hover,
+div.after_status:hover,
+div.firstSource_name:hover,
+div.secondSource_name:hover,
+div.pipe:hover,
+div.pipeDeal:hover,
+div.user_name:hover {
+  background-color: #f0f0f0;
+  font-size: 13.5px;
+  cursor: pointer;
+  transition: background-color 0.15s, font-size 0.15s;
+}
+div.pipeDeal:hover,
+div.pipe:hover,
+div.after_status:hover,
+div.start_status:hover {
+  font-size: 14.5px;
+}
+div.pipeDeal_child:hover,
+div.pipe_child:hover,
+div.after_st_child:hover,
+div.start_st_child:hover {
+  background-color: #f0f0f0;
+  font-size: 13.5px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.15s, font-size 0.15s;
+}
+div.loader_anim {
+  background: url("https://idajeprojects.ru/amo_resp/amo_rest_dev/loader.gif")
+    no-repeat center center;
+  background-size: contain;
+  height: 15px;
+  width: 15px;
+  margin: auto;
+}
+.warning-cover {
+  width: 100%;
+  height: 35%;
+  background-color: #2997c3;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.warning-icon {
+  background: url("https://idajeprojects.ru/amo_resp/amo_rest_dev/warning.png")
+    no-repeat center center;
+  background-size: contain;
+  width: 55%;
+  height: 60%;
+}
+div.banned1,
+div.banned {
+  background-color: white;
+  color: #363b4e;
+  width: 55%;
+  height: 55%;
+  border-radius: 15px;
+  font-size: 15px;
+  position: fixed;
+  left: 36%;
+  top: 20%;
+  bottom: 20%;
+  right: 5%;
+  text-align: center;
+  font-weight: 700;
+  border: none;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.06);
+  z-index: 2000;
+}
+div.banned1 {
+  width: 53%;
+  height: 60%;
+  left: 27%;
+  top: 20%;
+  bottom: 20%;
+  right: 20%;
+}
+.warning-text {
+  margin-top: 5%;
+  padding: 10px;
+}
+.upper-text,
+.under-text {
+  margin-top: 4px;
+  color: #5c636e;
+}
+.wrn-txt {
+  margin-bottom: 20px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+div.stageDeal_statuses_container,
+div.userDeal_statuses_container,
+div.pipes_container,
+div.after_statuses_container,
+div.start_statuses_container {
+  padding: 6px 0px 10px 0px;
+}
+div.userDeal_name,
+div.user_name,
+div.firstSource_name,
+div.secondSource_name {
+  padding: 6px 0px 6px 8px;
+  font-size: 13px;
+}

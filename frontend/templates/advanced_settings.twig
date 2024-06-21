@@ -1,0 +1,223 @@
+<div class="advanced-settings" id="{{ widget_code }}__advanced-settings">
+	<div class="{{ widget_code }}__white_block__description"></div>
+	<div id="preloader">
+		<div class="tab"></div>
+		<div class="pctr"></div>
+	</div>
+	<div class="maincontent">
+		<table class="responsible_que_rules_table">
+			<div class="header-cont">
+				<h1 class="header">проходят технические работы, воспользуйтесь другим виджетом</h1>
+				<button class="update-button">Обновить данные</button>
+			</div>
+			<tr class="table-header">
+				<th>Пользователь</th>
+				<th>Лимит сделок в активном статусе</th>
+				<th>Распределить сегодня</th>
+				<th>Распределить завтра</th>
+				<th>Лиды с задачами на сегодня</th>
+				<th>Новые лиды за сегодня</th>
+				<th>Количество лидов</th>
+				<th>Просроченные задачи</th>
+			</tr>
+		</table>
+	</div>
+
+	<!-- toggled menu -->
+	<div id="userDealStatusesMenuBlock" class="select-menu style-block2">
+		<div class="inner-title">
+			<div class="menu-title">Пользователи на которых распределять повторные лиды</div>
+			<div class="del" onclick="renderHiddenBlock('userDealStatusesMenuBlock');">x</div>
+		</div>
+		<div id="userDeal_statuses_container"></div>
+	</div>
+
+	<div id="stageDealStatusesMenuBlock" class="select-menu style-block2">
+		<div class="inner-title">
+			<div class="menu-title">Этапы, на которые распределять повторные лиды</div>
+			<div class="del" onclick="renderHiddenBlock('stageDealStatusesMenuBlock');">x</div>
+		</div>
+		<div id="stageDeal_statuses_container"></div>
+	</div>
+
+
+	<div id="startStatusesMenuBlock" class="select-menu style-block2">
+		<div class="inner-title">
+			<div class="menu-title">Воронки и этапы</div>
+			<div class="del" onclick="renderHiddenBlock('startStatusesMenuBlock');">x</div>
+		</div>
+		<div id="start_statuses_container"></div>
+	</div>
+
+	<div id="afterStatusesMenuBlock" class="select-menu style-block2">
+		<div class="inner-title">
+			<div class="menu-title">Воронки и этапы</div>
+			<div class="del" onclick="renderHiddenBlock('afterStatusesMenuBlock');">x</div>
+		</div>
+		<div id="after_statuses_container"></div>
+	</div>
+
+	<div id="pipeMenuBlock" class="select-menu style-block2">
+		<div class="inner-title">
+			<div class="menu-title">Воронки и этапы</div>
+			<div class="del" onclick="renderHiddenBlock('pipeMenuBlock');">x</div>
+		</div>
+		<div id="pipes_container"></div>
+	</div>
+
+	<div id="roleMenuBlock" class="select-menu style-block2">
+		<div class="inner-title">
+	  		<div class="menu-title">Пользователи</div>
+				<div class="del" onclick="renderHiddenBlock('roleMenuBlock');">x</div>
+		</div>
+  		<div id="users_container"></div>
+	</div>
+
+	<div id="firstSourceMenuBlock" class="select-menu styleSource2">
+		<div class="inner-title">
+			<div class="menu-title">Источники</div>
+			<div class="del" onclick="renderHiddenBlock('firstSourceMenuBlock');">x</div>
+		</div>
+		<div id="firstSource_container"></div>
+	</div>
+
+	<div id="secondSourceMenuBlock" class="select-menu styleSource2">
+		<div class="inner-title">
+			<div class="menu-title">Источники</div>
+			<div class="del" onclick="renderHiddenBlock('secondSourceMenuBlock');">x</div>
+		</div>
+		<div id="secondSource_container"></div>
+	</div>
+
+</div>
+		
+<!------------------->
+
+<!-- Pipes And Roles Container -->
+<div class="pipesRoles_container">
+
+	<div class="title">Пользователи на которых распределять повторные лиды</div>
+	<div class="list-container">
+		<div id="userDeal_statuses" class="user"></div>
+		<button class="append-btn" onclick="
+			renderHiddenBlock('userDealStatusesMenuBlock')
+		">+</button>
+	</div>
+
+	<div class="title">Этапы, на которые распределять повторные лиды</div>
+	<div class="list-container">
+		<div id="stageDeal_statuses" class="pipeline"></div>
+		<button class="append-btn" onclick="
+			renderHiddenBlock('stageDealStatusesMenuBlock')
+		">+</button>
+	</div>
+
+	<div class="title">Этапы, с которых распределять сделки</div>
+	<div class="list-container">
+		<div id="start_statuses" class="pipeline"></div>
+		<button class="append-btn" onclick="
+			renderHiddenBlock('startStatusesMenuBlock')
+		">+</button>
+	</div>
+
+	<div class="title">Этапы, на которые распределять сделки</div>
+	<div class="list-container">
+		<div id="after_statuses" class="pipeline"></div>
+		<button class="append-btn" onclick="
+			renderHiddenBlock('afterStatusesMenuBlock')
+		">+</button>
+	</div>
+
+	<div class="title">Этапы "в работе" для определения лимитов</div>
+	<div class="list-container">
+		<div id="pipeline" class="pipeline"></div>
+		<button class="append-btn" onclick="
+			renderHiddenBlock('pipeMenuBlock')
+		">+</button>
+	</div>
+
+	<div class="title">Пользователи</div>
+	<div class="list-container">
+		<div id="user" class="user"></div>
+		<button class="append-btn" onclick="
+			renderHiddenBlock('roleMenuBlock')
+		">+</button>
+	</div>
+</div>
+<!-------------------------------->
+	
+<!--Sources Container-->
+<div class="sourcesContainer">
+	<div class="title">Приоритетные источники</div>
+	<div class="sourceContent">
+		<div class="sideTitle1">Первая очередь</div>
+		<div class="listT-container">
+			<div id="sourceFirst" class="sourceFirst"></div>
+			<button class="append-btn" onclick="
+				renderHiddenBlock('firstSourceMenuBlock')
+			">+</button>
+		</div>
+		<div class="sideTitle">Вторая очередь</div>
+		<div class="listT-container">
+			<div id="sourceSecond" class="sourceSecond"></div>
+			<button class="append-btn" onclick="
+				renderHiddenBlock('secondSourceMenuBlock')
+			">+</button>
+		</div>
+	</div>
+</div>
+<!--------------------->
+		
+<div class="action_pannel">
+	<div id="save_settings_btn" class="action_btn_green">
+		<button class="save-button">Сохранить настройки</button>
+	</div>
+</div>	
+<div id="ban" class="unbanned">
+	<div class="warning-cover">
+		<div class="warning-icon"></div>
+	</div>
+	<div class="warning-text">
+		<div class="wrn-txt">Предупреждение!</div>
+		<div class="upper-text">У вас отсутствуют права доступа.</div>
+		<div class="under-text">Обратитесь к администратору</div>
+	</div>
+</div>
+
+<script>
+	$(document).mouseup(function (e) {
+		// Событие клика по веб-документу
+
+		// Проверяем и закрываем мультиселекты
+		var multi_selects = $('.style-block2');
+		$.each(multi_selects, function(index, el) {
+			if(!$(el).is(":hidden")) {
+					if ( !$(el).is(e.target) // если клик был не по нашему блоку
+							&& $(el).has(e.target).length === 0 ) { // и не по его дочерним элементам
+						$(el).addClass("select-menu"); // скрываем его
+					}
+			}
+		});
+
+		var multi_selects2 = $('.styleSource2');
+		$.each(multi_selects2, function(index, el) {
+			if(!$(el).is(":hidden")) {
+					if ( !$(el).is(e.target) // если клик был не по нашему блоку
+							&& $(el).has(e.target).length === 0 ) { // и не по его дочерним элементам
+						$(el).addClass("select-menu"); // скрываем его
+					}
+			}
+		});
+		
+	});
+
+	function renderHiddenBlock(menuId) {
+		const menuBlock = document.getElementById(menuId);
+		if (menuBlock.classList.contains("select-menu")) {
+			menuBlock.classList.remove("select-menu");
+		} else {
+			menuBlock.classList.add("select-menu");
+		}
+	}
+
+</script>	
